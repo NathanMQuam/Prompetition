@@ -27,7 +27,7 @@ class TopicService {
     try {
       const res = await api.get('api/topics/' + id)
       AppState.activeTopic = new Topic(res.data[0])
-      console.log(AppState.activeTopic.winners)
+      // console.log(AppState.activeTopic.winners)
     } catch (error) {
       logger.error(error)
     }

@@ -58,11 +58,11 @@ export default {
       state,
       test() {
         duelService.test(route.params.id)
-        console.log(AppState.activeDuel)
+        // console.log(AppState.activeDuel)
       },
       async createUserBody() {
         await duelService.createUserBody(AppState.activeDuel, { body: state.body })
-        console.log('Bames Nonds having a stronk, call a bondulance')
+        // console.log('Bames Nonds having a stronk, call a bondulance')
         router.push('list')
       }
     }

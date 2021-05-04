@@ -18,16 +18,16 @@ class SocketService extends SocketHandler {
   }
 
   connected(payload) {
-    console.log(payload.message)
+    // console.log(payload.message)
   }
 
   createDuel(payload) {
-    console.log(payload)
+    // console.log(payload)
     AppState.duels.push(payload)
   }
 
   getDuel(payload) {
-    console.log(payload)
+    // console.log(payload)
     AppState.duels.push(payload)
   }
 
@@ -42,7 +42,7 @@ class SocketService extends SocketHandler {
   }
 
   test(payload) {
-    console.log('testing')
+    // console.log('testing')
   }
 }
 

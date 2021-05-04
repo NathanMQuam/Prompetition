@@ -70,11 +70,11 @@ export default {
         await responseService.getResponsesByTopicId(route.params.topicId)
         state.isDailyChallenge = false
       }
-      console.log(AppState.topics)
+      // console.log(AppState.topics)
       if (!AppState.topics[0]) {
         await topicService.getTopics()
       }
-      console.log('My Response:', AppState.myResponse)
+      // console.log('My Response:', AppState.myResponse)
       state.submission = AppState.myResponse ? AppState.myResponse.body : ''
       // console.log('startDate', state.startDate.getTime())
       // console.log(new Date(AppState.todaysTopic.challengeStartDate).getTime())
